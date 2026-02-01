@@ -10,23 +10,20 @@
         <span class="intro__info">Please scroll moderately to fully experience the animations.</span>
     </div>
     <div class="content items-center">
-        <img class="w-[30%] rounded-lg" src="{{ asset('images/me.png') }}" alt="me">
-    </div>
-    {{-- <div class="content">
-        <h2 class="content__title" data-splitting data-effect19><span class="font-21 font-upper">Simple</span><span class="font-21 font-upper">Life</span></h2>
+        <img cursor-class="arrow" class="w-[30%] rounded-lg" src="{{ asset('images/me.png') }}" alt="me">
     </div>
     <div class="content">
-        <p>It is a journey of discovery, of exploration, of coming to know ourselves in a deeper and more profound way. And in that journey, we may find the truth that has been eluding us, and the
-            freedom that comes with i</p>
-    </div> --}}
-    <div class="content">
-        <h2 class="content__title" data-splitting data-effect20><span class="font-22 font-upper">Waking</span><span class="font-12 font-upper">Life</span></h2>
+        <h2 class="content__title" data-splitting data-effect20><span class="font-22 font-upper">Developer</span><span class="font-12 font-upper">Life</span></h2>
     </div>
     <div class="content">
-        <p>So let us surrender ourselves to the flow of existence, and trust in the journey that lies before us. For in that surrender, we may find the truth, and the beauty that comes with it.</p>
+        <p>
+            A journey of turning <strong>caffeine</strong> into complex systems,
+            navigating the delicate balance between "it works on my machine"
+            and "why is production on fire?"
+        </p>
     </div>
     <div class="grid grid-cols-1 gap-0 p-[var(--page-padding)] lg:grid-cols-12">
-        <aside class="hidden border-r border-white/10 py-24 pr-12 lg:col-span-3 lg:block">
+        <aside class="hidden border-b border-r border-t border-white/10 py-24 pr-12 lg:col-span-3 lg:block">
             <div class="sticky top-32">
                 <span class="section-header text-5xl opacity-10">01</span>
                 <p class="mt-8 font-sans text-xs uppercase leading-relaxed tracking-widest text-white/40">
@@ -36,8 +33,8 @@
             </div>
         </aside>
         <div class="lg:col-span-9">
-            <article class="border-b border-white/10 py-24 lg:pl-24">
-                <div class="grid grid-cols-1 items-start gap-16 md:grid-cols-2">
+            <article class="border-b border-t border-white/10 py-24 lg:pl-24">
+                <div class="grid grid-cols-1 items-start gap-16 md:grid-cols-1">
                     <div class="order-2 md:order-1">
                         <h2 class="section-header mb-8 text-6xl md:text-8xl">FRONT-END</h2>
                         <div class="narrative-text space-y-6 text-white/80">
@@ -62,15 +59,18 @@
                                 Ecology</span>
                         </div>
                     </div>
-                    <div class="order-1 md:order-2">
-                        <div class="group relative flex aspect-[4/5] items-center justify-center overflow-hidden border border-white/10 bg-white/5">
-                            <span class="material-symbols-outlined text-[120px] text-white/5 transition-transform duration-1000 group-hover:scale-125">architecture</span>
+                    <div class="order-1 grid grid-cols-2 md:order-2">
+                        <a cursor-class="arrow" class="group relative col-span-1 flex aspect-video items-center justify-center overflow-hidden border border-white/10 bg-white/5">
+                            <span class="material-symbols-outlined text-[120px] text-white/5">
+                                <img class="group-hover:scale-102 h-full w-full object-cover transition-transform duration-1000" src="{{ asset('images/ebooks.png') }}" alt="">
+                            </span>
+                            <div class="pointer-events-none absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-black/90 to-transparent"></div>
                             <div class="absolute bottom-6 left-6 flex flex-col items-start">
                                 <span class="font-experimental text-[10px] tracking-widest opacity-40">CHAPTER
                                     01</span>
                                 <span class="narrative-text text-sm">Visual Architecture</span>
                             </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </article>
@@ -79,25 +79,28 @@
             <div class="sticky top-32">
                 <span class="section-header text-5xl opacity-10">02</span>
                 <p class="mt-8 font-sans text-xs uppercase leading-relaxed tracking-widest text-white/40">
-                    The philosophy remains constant: Every line of code is a brushstroke. Every interface is a
-                    gallery space.
+                    I design resilient back-end systems: secure APIs, optimized data layers, and fault-tolerant
+                    services that keep applications reliable, performant, and easy to maintain.
                 </p>
             </div>
         </aside>
         <div class="lg:col-span-9">
             <article class="py-24 lg:pl-24">
-                <div class="grid grid-cols-1 items-center gap-16 md:grid-cols-12">
-                    <div class="md:col-span-5">
-                        <div class="group relative flex aspect-square items-center justify-center border border-white/10 bg-white/5">
-                            <span class="material-symbols-outlined text-[100px] text-white/5 transition-transform duration-1000 group-hover:rotate-12">terminal</span>
-                            <div class="absolute right-6 top-6 flex flex-col items-end">
-                                <span class="font-experimental text-right text-[10px] tracking-widest opacity-40">CHAPTER
-                                    02</span>
-                                <span class="narrative-text text-right text-sm">The Core Engine</span>
+                <div class="grid grid-cols-1 items-start gap-16 md:grid-cols-1">
+                    <div class="order-1 grid grid-cols-2 md:order-2">
+                        <a cursor-class="arrow" class="group relative col-span-1 flex aspect-video items-center justify-center overflow-hidden border border-white/10 bg-white/5">
+                            <span class="material-symbols-outlined text-[120px] text-white/5">
+                                <img class="group-hover:scale-102 h-full w-full object-cover transition-transform duration-1000" src="{{ asset('images/ebooks.png') }}" alt="">
+                            </span>
+                            <div class="pointer-events-none absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-black/90 to-transparent"></div>
+                            <div class="absolute bottom-6 left-6 flex flex-col items-start">
+                                <span class="font-experimental text-[10px] tracking-widest opacity-40">CHAPTER
+                                    01</span>
+                                <span class="narrative-text text-sm">Visual Architecture</span>
                             </div>
-                        </div>
+                        </a>
                     </div>
-                    <div class="md:col-span-7">
+                    <div class="order-2 md:order-1">
                         <h2 class="section-header mb-8 text-6xl md:text-8xl">BACK-END</h2>
                         <div class="narrative-text space-y-6 text-white/80">
                             <p>
@@ -141,14 +144,6 @@
     <div class="content">
         <p>The truth is that we are all simply waves in the ocean of existence, arising and falling back into the depths from which we came. And yet, we spend so much of our lives struggling against
             the natural ebb and flow of the universe, trying to hold on to what is fleeting and resist what is inevitable. </p>
-    </div>
-    <div class="content content--full">
-        <h2 class="content__title" data-splitting data-effect22><span class="font-23 font-upper">Dance</span><span class="font-upper font-16">into</span><span
-                class="font-upper font-23">Existence</span></h2>
-    </div>
-    <div class="content">
-        <p> But the more we cling to the illusion of control, the more we suffer. The art of letting go is not a skill to be learned, but a state of being to be realized. It is the recognition that we
-            are not separate from the world around us, but a part of it, and that our true power lies not in trying to dominate it, but in surrendering to it.</p>
     </div>
     <div class="content content--full">
         <h2 class="content__title" data-splitting data-effect23><span class="font-upper font-22">Deeper</span><span class="font-upper font-20">Love</span><span class="font-upper font-18">Light</span>

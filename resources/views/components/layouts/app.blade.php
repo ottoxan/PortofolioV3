@@ -8,6 +8,9 @@
         <link rel="stylesheet" href="https://use.typekit.net/zda3gdw.css">
         <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
         <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Plus+Jakarta+Sans:wght@200;300;400;500;600&amp;family=Syne:wght@700;800&amp;family=Instrument+Serif:ital@0;1&amp;family=Archivo+Black&amp;display=swap"
+            rel="stylesheet" />
         <script>
             document.documentElement.className = "js";
             var supportsCssVars = function() {

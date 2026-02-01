@@ -84,6 +84,8 @@
     }
 }
 
+
+
 /* Cursor */
 
 :root {
@@ -570,6 +572,18 @@ main {
     overflow: hidden;
 }
 
+.section-header {
+    font-family: 'Archivo Black', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: -0.02em;
+    line-height: 1;
+}
+
+.narrative-text {
+    font-family: 'Instrument Serif', serif;
+    font-size: 1.25rem;
+    line-height: 1.4;
+}
 @media screen and (min-width: 53em) {
     .frame {
         justify-items: start;
