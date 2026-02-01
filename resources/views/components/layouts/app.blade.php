@@ -24,7 +24,7 @@
         @livewireStyles
     </head>
 
-    <body id="sss" class="demo-2 loading">
+    <body id="sss" class="show-2 loading">
 
         <div id="cursor">
             <div class="cursor__circle"></div>

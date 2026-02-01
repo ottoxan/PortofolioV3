@@ -25,6 +25,116 @@
     <div class="content">
         <p>So let us surrender ourselves to the flow of existence, and trust in the journey that lies before us. For in that surrender, we may find the truth, and the beauty that comes with it.</p>
     </div>
+    <div class="grid grid-cols-1 gap-0 p-[var(--page-padding)] lg:grid-cols-12">
+        <aside class="hidden border-r border-white/10 py-24 pr-12 lg:col-span-3 lg:block">
+            <div class="sticky top-32">
+                <span class="section-header text-5xl opacity-10">01</span>
+                <p class="mt-8 font-sans text-xs uppercase leading-relaxed tracking-widest text-white/40">
+                    The philosophy remains constant: Every line of code is a brushstroke. Every interface is a
+                    gallery space.
+                </p>
+            </div>
+        </aside>
+        <div class="lg:col-span-9">
+            <article class="border-b border-white/10 py-24 lg:pl-24">
+                <div class="grid grid-cols-1 items-start gap-16 md:grid-cols-2">
+                    <div class="order-2 md:order-1">
+                        <h2 class="section-header mb-8 text-6xl md:text-8xl">FRONT-END</h2>
+                        <div class="narrative-text space-y-6 text-white/80">
+                            <p>
+                                The journey starts with the visible. It's a dialogue between human psychology and
+                                technological capability. I approach the front-end not as a layout, but as a
+                                narrative flow—where movement, space, and typography guide the user through a
+                                curated digital experience.
+                            </p>
+                            <p class="text-lg opacity-60">
+                                Leveraging React and Next.js, I construct environments that breathe. They respond
+                                with the grace of a printed magazine yet hold the power of modern software. It is
+                                about the tension between the grid and the freedom of high-end aesthetics.
+                            </p>
+                        </div>
+                        <div class="mt-12 flex flex-wrap gap-4">
+                            <span class="border border-white/20 px-3 py-1 text-[10px] uppercase tracking-tighter">Fluid
+                                Typography</span>
+                            <span class="border border-white/20 px-3 py-1 text-[10px] uppercase tracking-tighter">Motion
+                                Design</span>
+                            <span class="border border-white/20 px-3 py-1 text-[10px] uppercase tracking-tighter">React
+                                Ecology</span>
+                        </div>
+                    </div>
+                    <div class="order-1 md:order-2">
+                        <div class="group relative flex aspect-[4/5] items-center justify-center overflow-hidden border border-white/10 bg-white/5">
+                            <span class="material-symbols-outlined text-[120px] text-white/5 transition-transform duration-1000 group-hover:scale-125">architecture</span>
+                            <div class="absolute bottom-6 left-6 flex flex-col items-start">
+                                <span class="font-experimental text-[10px] tracking-widest opacity-40">CHAPTER
+                                    01</span>
+                                <span class="narrative-text text-sm">Visual Architecture</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <aside class="hidden border-r border-white/10 py-24 pr-12 lg:col-span-3 lg:block">
+            <div class="sticky top-32">
+                <span class="section-header text-5xl opacity-10">02</span>
+                <p class="mt-8 font-sans text-xs uppercase leading-relaxed tracking-widest text-white/40">
+                    The philosophy remains constant: Every line of code is a brushstroke. Every interface is a
+                    gallery space.
+                </p>
+            </div>
+        </aside>
+        <div class="lg:col-span-9">
+            <article class="py-24 lg:pl-24">
+                <div class="grid grid-cols-1 items-center gap-16 md:grid-cols-12">
+                    <div class="md:col-span-5">
+                        <div class="group relative flex aspect-square items-center justify-center border border-white/10 bg-white/5">
+                            <span class="material-symbols-outlined text-[100px] text-white/5 transition-transform duration-1000 group-hover:rotate-12">terminal</span>
+                            <div class="absolute right-6 top-6 flex flex-col items-end">
+                                <span class="font-experimental text-right text-[10px] tracking-widest opacity-40">CHAPTER
+                                    02</span>
+                                <span class="narrative-text text-right text-sm">The Core Engine</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:col-span-7">
+                        <h2 class="section-header mb-8 text-6xl md:text-8xl">BACK-END</h2>
+                        <div class="narrative-text space-y-6 text-white/80">
+                            <p>
+                                Beneath the surface lies the engine—the silent partner in every digital interaction.
+                                Stability is the ultimate luxury. My approach to systems design is rooted in the
+                                belief that true performance is invisible.
+                            </p>
+                            <p class="text-lg opacity-60">
+                                By architecting robust Node and Go infrastructures, I ensure that the storytelling
+                                remains uninterrupted. Secure data pathways, optimized queries, and cloud-native
+                                solutions form the bedrock of the experience. The logic layer is where intent
+                                becomes reality.
+                            </p>
+                        </div>
+                        <a class="font-experimental mt-8 inline-block border-b border-white pb-2 text-[10px] uppercase tracking-[0.3em] transition-all hover:opacity-50" href="#">
+                            Explore the machinery
+                        </a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </div>
+    {{-- <div class="row-span-2 grid grid-cols-3 gap-4">
+        <div class="col-span-1 row-span-2">
+            <h2 class="content__title" data-splitting data-effect23>
+                <span class="font-upper font-22 text-[80px]">Deeper</span>
+                <span class="font-upper font-20">Love</span>
+                <span class="font-upper font-18">Light</span>
+            </h2>
+        </div>
+        <div class="col-span-1 row-span-1">
+            <h2 class="content__title" data-splitting data-effect23>
+                <span class="font-upper font-18">Light</span>
+            </h2>
+        </div>
+        <div class="col-span-1 row-span-1"></div>
+    </div> --}}
     <div class="content content--full">
         <h2 class="content__title" data-splitting data-effect21><span class="font-20">Beauty</span><span class="font-18">remains</span></h2>
     </div>
