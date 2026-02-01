@@ -17,7 +17,7 @@
     </div>
     <div class="content">
         <p>It is a journey of discovery, of exploration, of coming to know ourselves in a deeper and more profound way. And in that journey, we may find the truth that has been eluding us, and the
-            freedom that comes with it</p>
+            freedom that comes with i</p>
     </div> --}}
     <div class="content">
         <h2 class="content__title" data-splitting data-effect20><span class="font-22 font-upper">Waking</span><span class="font-12 font-upper">Life</span></h2>
