@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="favicon.ico">
         <link rel="stylesheet" href="https://use.typekit.net/zda3gdw.css">
+        <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
         <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
         <script>
             document.documentElement.className = "js";
