@@ -33,6 +33,8 @@
             <div class="cursor__circle"></div>
         </div>
 
+        @livewire('partials.navbar')
+
         {{-- @livewire('partials.navbar') --}}
 
         {{ $slot }}

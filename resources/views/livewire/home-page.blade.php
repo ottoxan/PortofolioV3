@@ -1,12 +1,7 @@
-<main>
-    <div class="frame">
-        @livewire('partials.navbar')
-    </div>
+<main class="no-scrollbar">
+
     <div class="intro">
         <h1 class="intro__title">
-            @if (isset($projects) && $projects->isNotEmpty())
-                <span class="intro__project-title">{{ $projects->first()->title }}</span>
-            @endif
             <span class="intro__title-pre">Welcome</span>
             <span class="intro__title-sub">To my portofolio<sup><small>2</small></sup></span>
         </h1>
@@ -53,14 +48,6 @@
                                 about the tension between the grid and the freedom of high-end aesthetics.
                             </p>
                         </div>
-                        <div class="mt-12 flex flex-wrap gap-4">
-                            <span class="border border-white/20 px-3 py-1 text-[10px] uppercase tracking-tighter">Fluid
-                                Typography</span>
-                            <span class="border border-white/20 px-3 py-1 text-[10px] uppercase tracking-tighter">Motion
-                                Design</span>
-                            <span class="border border-white/20 px-3 py-1 text-[10px] uppercase tracking-tighter">React
-                                Ecology</span>
-                        </div>
                     </div>
                     <div class="order-1 grid grid-cols-2 md:order-2">
                         @foreach ($projects as $p)
@@ -72,7 +59,7 @@
                                 </span>
                                 <div class="pointer-events-none absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-black/90 to-transparent"></div>
                                 <div class="absolute bottom-6 left-6 flex flex-col items-start">
-                                    <span class="font-experimental text-[10px] tracking-widest opacity-40">
+                                    <span class="font-experimental text-[10px] tracking-widest opacity-40 uppercase">
                                         {{ is_array($p->code_lang) ? implode(', ', $p->code_lang) : $p->code_lang ?? '' }}
                                     </span>
                                     <span class="narrative-text text-sm">{{ $p->title }}</span>
