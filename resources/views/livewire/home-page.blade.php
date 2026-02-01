@@ -10,14 +10,14 @@
         <span class="intro__info">Please scroll moderately to fully experience the animations</span>
     </div>
     <div class="content items-center">
-        <img class="rounded-lg w-[30%] " src="{{ asset('images/me.png') }}" alt="me">
+        <img class="w-[30%] rounded-lg" src="{{ asset('images/me.png') }}" alt="me">
     </div>
     {{-- <div class="content">
         <h2 class="content__title" data-splitting data-effect19><span class="font-21 font-upper">Simple</span><span class="font-21 font-upper">Life</span></h2>
     </div>
     <div class="content">
         <p>It is a journey of discovery, of exploration, of coming to know ourselves in a deeper and more profound way. And in that journey, we may find the truth that has been eluding us, and the
-            freedom that comes with it.</p>
+            freedom that comes with it</p>
     </div> --}}
     <div class="content">
         <h2 class="content__title" data-splitting data-effect20><span class="font-22 font-upper">Waking</span><span class="font-12 font-upper">Life</span></h2>
