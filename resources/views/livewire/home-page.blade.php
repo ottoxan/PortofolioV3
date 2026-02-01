@@ -7,7 +7,7 @@
             <span class="intro__title-pre">Welcome</span>
             <span class="intro__title-sub">To my portofolio<sup><small>2</small></sup></span>
         </h1>
-        <span class="intro__info">Please scroll moderately to fully experience the animations..</span>
+        <span class="intro__info">Please scroll moderately to fully experience the animations</span>
     </div>
     <div class="content items-center">
         <img class="w-[30%] rounded-lg" src="{{ asset('images/me.png') }}" alt="me">
