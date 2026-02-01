@@ -31,7 +31,11 @@ class ProjectForm
 
                 TagsInput::make('code_lang'),
                 MarkdownEditor::make('description')->columnSpanFull(),
-                FileUpload::make('image')->columnSpanFull(),
+                FileUpload::make('image')
+                    ->image()
+                    ->disk('public')
+                    ->directory('projects')
+                    ->columnSpanFull(),
             ])->columns(2);
     }
 }

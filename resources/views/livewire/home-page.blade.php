@@ -4,6 +4,9 @@
     </div>
     <div class="intro">
         <h1 class="intro__title">
+            @if (isset($projects) && $projects->isNotEmpty())
+                <span class="intro__project-title">{{ $projects->first()->title }}</span>
+            @endif
             <span class="intro__title-pre">Welcome</span>
             <span class="intro__title-sub">To my portofolio<sup><small>2</small></sup></span>
         </h1>
@@ -60,17 +63,27 @@
                         </div>
                     </div>
                     <div class="order-1 grid grid-cols-2 md:order-2">
-                        <a cursor-class="arrow" class="group relative col-span-1 flex aspect-video items-center justify-center overflow-hidden border border-white/10 bg-white/5">
-                            <span class="material-symbols-outlined text-[120px] text-white/5">
-                                <img class="group-hover:scale-102 h-full w-full object-cover transition-transform duration-1000" src="{{ asset('images/ebooks.png') }}" alt="">
-                            </span>
-                            <div class="pointer-events-none absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-black/90 to-transparent"></div>
-                            <div class="absolute bottom-6 left-6 flex flex-col items-start">
-                                <span class="font-experimental text-[10px] tracking-widest opacity-40">CHAPTER
-                                    01</span>
-                                <span class="narrative-text text-sm">Visual Architecture</span>
-                            </div>
-                        </a>
+                        @foreach ($projects as $p)
+                            <a href="{{ $p->link }}" cursor-class="arrow"
+                                class="group relative col-span-1 flex aspect-video items-center justify-center overflow-hidden border border-white/10 bg-white/5">
+                                <span class="material-symbols-outlined text-[120px] text-white/5">
+                                    <img class="h-full w-full object-cover transition-transform duration-1000 group-hover:scale-105"
+                                        src="{{ strpos($p->image, 'http') === 0 ? $p->image : asset('storage/' . ltrim($p->image, '/')) }}" alt="{{ $p->title }}">
+                                </span>
+                                <div class="pointer-events-none absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-black/90 to-transparent"></div>
+                                <div class="absolute bottom-6 left-6 flex flex-col items-start">
+                                    <span class="font-experimental text-[10px] tracking-widest opacity-40">
+                                        {{ is_array($p->code_lang) ? implode(', ', $p->code_lang) : $p->code_lang ?? '' }}
+                                    </span>
+                                    <span class="narrative-text text-sm">{{ $p->title }}</span>
+                                </div>
+                                <div class="absolute bottom-6 right-6 flex flex-col items-end">
+                                    <span class="border border-white/20 px-3 py-1 text-[10px] uppercase tracking-tighter">
+                                        {{ $p->status }}
+                                    </span>
+                                </div>
+                            </a>
+                        @endforeach
                     </div>
                 </div>
             </article>
@@ -90,7 +103,7 @@
                     <div class="order-1 grid grid-cols-2 md:order-2">
                         <a cursor-class="arrow" class="group relative col-span-1 flex aspect-video items-center justify-center overflow-hidden border border-white/10 bg-white/5">
                             <span class="material-symbols-outlined text-[120px] text-white/5">
-                                <img class="group-hover:scale-102 h-full w-full object-cover transition-transform duration-1000" src="{{ asset('images/ebooks.png') }}" alt="">
+                                <img class="h-full w-full object-cover transition-transform duration-1000 group-hover:scale-105" src="{{ asset('images/ebooks.png') }}" alt="">
                             </span>
                             <div class="pointer-events-none absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-black/90 to-transparent"></div>
                             <div class="absolute bottom-6 left-6 flex flex-col items-start">
