@@ -1,5 +1,4 @@
 <main class="no-scrollbar">
-
     <div class="intro">
         <h1 class="intro__title">
             <span class="intro__title-pre">Welcome</span>
@@ -21,6 +20,90 @@
         </p>
     </div>
     <div class="grid grid-cols-1 gap-0 p-[var(--page-padding)] lg:grid-cols-12">
+        <aside class="hidden border-r border-white/10 py-24 pr-12 lg:col-span-3 lg:block">
+            <div class="sticky top-32">
+                <span class="section-header text-5xl opacity-10">02</span>
+                <p class="mt-8 font-sans text-xs uppercase leading-relaxed tracking-widest text-white/40">
+                    I design resilient back-end systems: secure APIs, optimized data layers, and fault-tolerant
+                    services that keep applications reliable, performant, and easy to maintain.
+                </p>
+            </div>
+        </aside>
+        <div class="lg:col-span-9">
+            <article class="py-24 lg:pl-24">
+                <div class="grid grid-cols-1 items-start gap-16 md:grid-cols-1">
+                    <div class="order-1 grid grid-cols-2 md:order-2">
+                        <div class="space-y-12 lg:col-span-7">
+                            <div>
+                                <h4 class="font-experimental mb-4 border-b border-white/10 pb-2 text-[10px] uppercase tracking-widest opacity-40">Core Languages</h4>
+                                <div class="grid grid-cols-2 gap-2 md:grid-cols-3">
+                                    <div class="flex items-center gap-3 border border-white/10 bg-white/5 p-4 transition-colors hover:bg-white/10">
+                                        <span class="material-symbols-outlined text-lg text-white/40">code</span>
+                                        <span class="font-experimental text-[10px] uppercase tracking-widest">HTML</span>
+                                    </div>
+                                    <div class="flex items-center gap-3 border border-white/10 bg-white/5 p-4 transition-colors hover:bg-white/10">
+                                        <span class="material-symbols-outlined text-lg text-white/40">javascript</span>
+                                        <span class="font-experimental text-[10px] uppercase tracking-widest">JavaScript</span>
+                                    </div>
+                                    <div class="flex items-center gap-3 border border-white/10 bg-white/5 p-4 transition-colors hover:bg-white/10">
+                                        <span class="material-symbols-outlined text-lg text-white/40">terminal</span>
+                                        <span class="font-experimental text-[10px] uppercase tracking-widest">CSS</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="font-experimental mb-4 border-b border-white/10 pb-2 text-[10px] uppercase tracking-widest opacity-40">Frameworks &amp; Libraries</h4>
+                                <div class="grid grid-cols-2 gap-2 md:grid-cols-3">
+                                    <div class="flex items-center gap-3 border border-white/10 bg-white/5 p-4 transition-colors hover:bg-white/10">
+                                        <span class="material-symbols-outlined text-lg text-white/40">vitals</span>
+                                        <span class="font-experimental text-[10px] uppercase tracking-widest">React.js</span>
+                                    </div>
+                                    <div class="flex items-center gap-3 border border-white/10 bg-white/5 p-4 transition-colors hover:bg-white/10">
+                                        <span class="material-symbols-outlined text-lg text-white/40">grid_view</span>
+                                        <span class="font-experimental text-[10px] uppercase tracking-widest">Tailwind</span>
+                                    </div>
+                                    <div class="flex items-center gap-3 border border-white/10 bg-white/5 p-4 transition-colors hover:bg-white/10">
+                                        <span class="material-symbols-outlined text-lg text-white/40">database</span>
+                                        <span class="font-experimental text-[10px] uppercase tracking-widest">Node.js</span>
+                                    </div>
+                                    <div class="flex items-center gap-3 border border-white/10 bg-white/5 p-4 transition-colors hover:bg-white/10">
+                                        <span class="material-symbols-outlined text-lg text-white/40">settings_input_component</span>
+                                        <span class="font-experimental text-[10px] uppercase tracking-widest">MySQL</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="font-experimental mb-4 border-b border-white/10 pb-2 text-[10px] uppercase tracking-widest opacity-40">Tools &amp; Platforms</h4>
+                                <div class="grid grid-cols-2 gap-2 md:grid-cols-3">
+                                    <div class="flex items-center gap-3 border border-white/10 bg-white/5 p-4 transition-colors hover:bg-white/10">
+                                        <span class="material-symbols-outlined text-lg text-white/40">brush</span>
+                                        <span class="font-experimental text-[10px] uppercase tracking-widest">Figma</span>
+                                    </div>
+                                    <div class="flex items-center gap-3 border border-white/10 bg-white/5 p-4 transition-colors hover:bg-white/10">
+                                        <span class="material-symbols-outlined text-lg text-white/40">deployed_code</span>
+                                        <span class="font-experimental text-[10px] uppercase tracking-widest">Docker</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order-2 md:order-1">
+                        <h2 class="section-header mb-8 text-6xl md:text-8xl">Skills</h2>
+                        <div class="narrative-text space-y-6 text-white/80">
+                            <p>
+                                My expertise is built on a structured architectural foundation,
+                                moving from the molecular level of core languages to the sophisticated orchestration of modern
+                                frameworks.
+                            </p>
+                            <p class="text-lg opacity-60">
+                                I categorize my technical repertoire into specialized clusters, ensuring that every tool selected serves the greater narrative of the digital environment.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+
         <aside class="hidden border-b border-r border-t border-white/10 py-24 pr-12 lg:col-span-3 lg:block">
             <div class="sticky top-32">
                 <span class="section-header text-5xl opacity-10">01</span>
@@ -34,7 +117,7 @@
             <article class="border-b border-t border-white/10 py-24 lg:pl-24">
                 <div class="grid grid-cols-1 items-start gap-16 md:grid-cols-1">
                     <div class="order-2 md:order-1">
-                        <h2 class="section-header mb-8 text-6xl md:text-8xl">FRONT-END</h2>
+                        <h2 class="section-header mb-8 text-6xl md:text-8xl">Projects</h2>
                         <div class="narrative-text space-y-6 text-white/80">
                             <p>
                                 The journey starts with the visible. It's a dialogue between human psychology and
@@ -43,13 +126,13 @@
                                 curated digital experience.
                             </p>
                             <p class="text-lg opacity-60">
-                                Leveraging React and Next.js, I construct environments that breathe. They respond
+                                I construct environments that breathe. They respond
                                 with the grace of a printed magazine yet hold the power of modern software. It is
                                 about the tension between the grid and the freedom of high-end aesthetics.
                             </p>
                         </div>
                     </div>
-                    <div class="order-1 grid grid-cols-2 md:order-2">
+                    <div class="order-1 grid grid-cols-2 gap-5 md:order-2">
                         @foreach ($projects as $p)
                             <a href="{{ $p->link }}" cursor-class="arrow"
                                 class="group relative col-span-1 flex aspect-video items-center justify-center overflow-hidden border border-white/10 bg-white/5">
@@ -59,7 +142,7 @@
                                 </span>
                                 <div class="pointer-events-none absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-black/90 to-transparent"></div>
                                 <div class="absolute bottom-6 left-6 flex flex-col items-start">
-                                    <span class="font-experimental text-[10px] tracking-widest opacity-40 uppercase">
+                                    <span class="font-experimental text-[10px] uppercase tracking-widest opacity-40">
                                         {{ is_array($p->code_lang) ? implode(', ', $p->code_lang) : $p->code_lang ?? '' }}
                                     </span>
                                     <span class="narrative-text text-sm">{{ $p->title }}</span>
@@ -75,69 +158,8 @@
                 </div>
             </article>
         </div>
-        <aside class="hidden border-r border-white/10 py-24 pr-12 lg:col-span-3 lg:block">
-            <div class="sticky top-32">
-                <span class="section-header text-5xl opacity-10">02</span>
-                <p class="mt-8 font-sans text-xs uppercase leading-relaxed tracking-widest text-white/40">
-                    I design resilient back-end systems: secure APIs, optimized data layers, and fault-tolerant
-                    services that keep applications reliable, performant, and easy to maintain.
-                </p>
-            </div>
-        </aside>
-        <div class="lg:col-span-9">
-            <article class="py-24 lg:pl-24">
-                <div class="grid grid-cols-1 items-start gap-16 md:grid-cols-1">
-                    <div class="order-1 grid grid-cols-2 md:order-2">
-                        <a cursor-class="arrow" class="group relative col-span-1 flex aspect-video items-center justify-center overflow-hidden border border-white/10 bg-white/5">
-                            <span class="material-symbols-outlined text-[120px] text-white/5">
-                                <img class="h-full w-full object-cover transition-transform duration-1000 group-hover:scale-105" src="{{ asset('images/ebooks.png') }}" alt="">
-                            </span>
-                            <div class="pointer-events-none absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-black/90 to-transparent"></div>
-                            <div class="absolute bottom-6 left-6 flex flex-col items-start">
-                                <span class="font-experimental text-[10px] tracking-widest opacity-40">CHAPTER
-                                    01</span>
-                                <span class="narrative-text text-sm">Visual Architecture</span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="order-2 md:order-1">
-                        <h2 class="section-header mb-8 text-6xl md:text-8xl">BACK-END</h2>
-                        <div class="narrative-text space-y-6 text-white/80">
-                            <p>
-                                Beneath the surface lies the engine—the silent partner in every digital interaction.
-                                Stability is the ultimate luxury. My approach to systems design is rooted in the
-                                belief that true performance is invisible.
-                            </p>
-                            <p class="text-lg opacity-60">
-                                By architecting robust Node and Go infrastructures, I ensure that the storytelling
-                                remains uninterrupted. Secure data pathways, optimized queries, and cloud-native
-                                solutions form the bedrock of the experience. The logic layer is where intent
-                                becomes reality.
-                            </p>
-                        </div>
-                        <a class="font-experimental mt-8 inline-block border-b border-white pb-2 text-[10px] uppercase tracking-[0.3em] transition-all hover:opacity-50" href="#">
-                            Explore the machinery
-                        </a>
-                    </div>
-                </div>
-            </article>
-        </div>
+
     </div>
-    {{-- <div class="row-span-2 grid grid-cols-3 gap-4">
-        <div class="col-span-1 row-span-2">
-            <h2 class="content__title" data-splitting data-effect23>
-                <span class="font-upper font-22 text-[80px]">Deeper</span>
-                <span class="font-upper font-20">Love</span>
-                <span class="font-upper font-18">Light</span>
-            </h2>
-        </div>
-        <div class="col-span-1 row-span-1">
-            <h2 class="content__title" data-splitting data-effect23>
-                <span class="font-upper font-18">Light</span>
-            </h2>
-        </div>
-        <div class="col-span-1 row-span-1"></div>
-    </div> --}}
     <div class="content content--full">
         <h2 class="content__title" data-splitting data-effect21><span class="font-20">Beauty</span><span class="font-18">remains</span></h2>
     </div>
@@ -146,7 +168,8 @@
             the natural ebb and flow of the universe, trying to hold on to what is fleeting and resist what is inevitable. </p>
     </div>
     <div class="content content--full">
-        <h2 class="content__title" data-splitting data-effect23><span class="font-upper font-22">Deeper</span><span class="font-upper font-20">Love</span><span class="font-upper font-18">Light</span>
+        <h2 class="content__title" data-splitting data-effect23><span class="font-upper font-22">Deeper</span><span class="font-upper font-20">Love</span><span
+                class="font-upper font-18">Light</span>
         </h2>
     </div>
     <div class="content">

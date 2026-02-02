@@ -29,10 +29,14 @@ class ProjectsTable
                         'Published' => 'success',
                     }),
                 TextColumn::make('code_lang')
+                    ->formatStateUsing(fn($state) => is_array($state) ? implode(', ', $state) : $state)
                     ->badge(),
                 TextColumn::make('description')->limit(20),
                 TextColumn::make('link')->limit(20),
-                ImageColumn::make('image'),
+                ImageColumn::make('image')
+                    ->disk('public')
+                    ->height(60)
+                    ->width(120),
             ])
             ->filters([
                 //
