@@ -15,6 +15,7 @@ class HomePage extends Component
 
     public function render()
     {
-        return view('livewire.home-page');
+        $skills = \App\Models\Skills::all()->groupBy('category');
+        return view('livewire.home-page', compact('skills'));
     }
 }

@@ -37,52 +37,58 @@
                             <div>
                                 <h4 class="font-experimental mb-4 border-b border-white/10 pb-2 text-[10px] uppercase tracking-widest opacity-40">Core Languages</h4>
                                 <div class="grid grid-cols-2 gap-2 md:grid-cols-3">
-                                    <div class="flex items-center gap-3 border border-white/10 bg-white/5 p-4 transition-colors hover:bg-white/10">
-                                        <span class="material-symbols-outlined text-lg text-white/40">code</span>
-                                        <span class="font-experimental text-[10px] uppercase tracking-widest">HTML</span>
-                                    </div>
-                                    <div class="flex items-center gap-3 border border-white/10 bg-white/5 p-4 transition-colors hover:bg-white/10">
-                                        <span class="material-symbols-outlined text-lg text-white/40">javascript</span>
-                                        <span class="font-experimental text-[10px] uppercase tracking-widest">JavaScript</span>
-                                    </div>
-                                    <div class="flex items-center gap-3 border border-white/10 bg-white/5 p-4 transition-colors hover:bg-white/10">
-                                        <span class="material-symbols-outlined text-lg text-white/40">terminal</span>
-                                        <span class="font-experimental text-[10px] uppercase tracking-widest">CSS</span>
-                                    </div>
+                                    @foreach ($skills->get('language', collect()) as $s)
+                                        <div class="group border border-white/10 bg-white/5 p-4 transition-colors hover:bg-white/10">
+                                            <div class="mb-3 flex items-center justify-between">
+                                                <div class="flex items-center gap-3">
+                                                    <span class="material-symbols-outlined text-lg text-white/40 transition-colors group-hover:text-white/80">code</span>
+                                                    <span class="font-experimental text-[10px] uppercase tracking-widest transition-colors group-hover:text-white/80">{{ $s->skill }}</span>
+                                                </div>
+                                                <span class="font-experimental text-[10px] text-white/40 transition-colors group-hover:text-white/80">{{ $s->percentage }}%</span>
+                                            </div>
+                                            <div class="h-[2px] w-full overflow-hidden rounded-full bg-white/5">
+                                                <div class="h-full bg-white/40 transition-all duration-500 group-hover:bg-white/80" style="width: {{ $s->percentage }}%"></div>
+                                            </div>
+                                        </div>
+                                    @endforeach
                                 </div>
                             </div>
                             <div>
                                 <h4 class="font-experimental mb-4 border-b border-white/10 pb-2 text-[10px] uppercase tracking-widest opacity-40">Frameworks &amp; Libraries</h4>
                                 <div class="grid grid-cols-2 gap-2 md:grid-cols-3">
-                                    <div class="flex items-center gap-3 border border-white/10 bg-white/5 p-4 transition-colors hover:bg-white/10">
-                                        <span class="material-symbols-outlined text-lg text-white/40">vitals</span>
-                                        <span class="font-experimental text-[10px] uppercase tracking-widest">React.js</span>
-                                    </div>
-                                    <div class="flex items-center gap-3 border border-white/10 bg-white/5 p-4 transition-colors hover:bg-white/10">
-                                        <span class="material-symbols-outlined text-lg text-white/40">grid_view</span>
-                                        <span class="font-experimental text-[10px] uppercase tracking-widest">Tailwind</span>
-                                    </div>
-                                    <div class="flex items-center gap-3 border border-white/10 bg-white/5 p-4 transition-colors hover:bg-white/10">
-                                        <span class="material-symbols-outlined text-lg text-white/40">database</span>
-                                        <span class="font-experimental text-[10px] uppercase tracking-widest">Node.js</span>
-                                    </div>
-                                    <div class="flex items-center gap-3 border border-white/10 bg-white/5 p-4 transition-colors hover:bg-white/10">
-                                        <span class="material-symbols-outlined text-lg text-white/40">settings_input_component</span>
-                                        <span class="font-experimental text-[10px] uppercase tracking-widest">MySQL</span>
-                                    </div>
+                                    @foreach ($skills->get('framework', collect()) as $s)
+                                        <div class="group border border-white/10 bg-white/5 p-4 transition-colors hover:bg-white/10">
+                                            <div class="mb-3 flex items-center justify-between">
+                                                <div class="flex items-center gap-3">
+                                                    <span class="material-symbols-outlined text-lg text-white/40 transition-colors group-hover:text-white/80">vitals</span>
+                                                    <span class="font-experimental text-[10px] uppercase tracking-widest transition-colors group-hover:text-white/80">{{ $s->skill }}</span>
+                                                </div>
+                                                <span class="font-experimental text-[10px] text-white/40 transition-colors group-hover:text-white/80">{{ $s->percentage }}%</span>
+                                            </div>
+                                            <div class="h-[2px] w-full overflow-hidden rounded-full bg-white/5">
+                                                <div class="h-full bg-white/40 transition-all duration-500 group-hover:bg-white/80" style="width: {{ $s->percentage }}%"></div>
+                                            </div>
+                                        </div>
+                                    @endforeach
                                 </div>
                             </div>
                             <div>
                                 <h4 class="font-experimental mb-4 border-b border-white/10 pb-2 text-[10px] uppercase tracking-widest opacity-40">Tools &amp; Platforms</h4>
                                 <div class="grid grid-cols-2 gap-2 md:grid-cols-3">
-                                    <div class="flex items-center gap-3 border border-white/10 bg-white/5 p-4 transition-colors hover:bg-white/10">
-                                        <span class="material-symbols-outlined text-lg text-white/40">brush</span>
-                                        <span class="font-experimental text-[10px] uppercase tracking-widest">Figma</span>
-                                    </div>
-                                    <div class="flex items-center gap-3 border border-white/10 bg-white/5 p-4 transition-colors hover:bg-white/10">
-                                        <span class="material-symbols-outlined text-lg text-white/40">deployed_code</span>
-                                        <span class="font-experimental text-[10px] uppercase tracking-widest">Docker</span>
-                                    </div>
+                                    @foreach ($skills->get('tools', collect()) as $s)
+                                        <div class="group border border-white/10 bg-white/5 p-4 transition-colors hover:bg-white/10">
+                                            <div class="mb-3 flex items-center justify-between">
+                                                <div class="flex items-center gap-3">
+                                                    <span class="material-symbols-outlined text-lg text-white/40 transition-colors group-hover:text-white/80">brush</span>
+                                                    <span class="font-experimental text-[10px] uppercase tracking-widest transition-colors group-hover:text-white/80">{{ $s->skill }}</span>
+                                                </div>
+                                                <span class="font-experimental text-[10px] text-white/40 transition-colors group-hover:text-white/80">{{ $s->percentage }}%</span>
+                                            </div>
+                                            <div class="h-[2px] w-full overflow-hidden rounded-full bg-white/5">
+                                                <div class="h-full bg-white/40 transition-all duration-500 group-hover:bg-white/80" style="width: {{ $s->percentage }}%"></div>
+                                            </div>
+                                        </div>
+                                    @endforeach
                                 </div>
                             </div>
                         </div>
@@ -134,11 +140,9 @@
                     </div>
                     <div class="order-1 grid grid-cols-2 gap-5 md:order-2">
                         @foreach ($projects as $p)
-                            <a href="{{ $p->link }}" cursor-class="arrow"
-                                class="group relative col-span-1 flex aspect-video items-center justify-center overflow-hidden border border-white/10 bg-white/5">
+                            <a href="{{ $p->link }}" cursor-class="arrow" class="group relative col-span-1 flex aspect-video items-center justify-center overflow-hidden border border-white/10 bg-white/5">
                                 <span class="material-symbols-outlined text-[120px] text-white/5">
-                                    <img class="h-full w-full object-cover transition-transform duration-1000 group-hover:scale-105"
-                                        src="{{ strpos($p->image, 'http') === 0 ? $p->image : asset('storage/' . ltrim($p->image, '/')) }}" alt="{{ $p->title }}">
+                                    <img class="h-full w-full object-cover transition-transform duration-1000 group-hover:scale-105" src="{{ strpos($p->image, 'http') === 0 ? $p->image : asset('storage/' . ltrim($p->image, '/')) }}" alt="{{ $p->title }}">
                                 </span>
                                 <div class="pointer-events-none absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-black/90 to-transparent"></div>
                                 <div class="absolute bottom-6 left-6 flex flex-col items-start">
@@ -168,8 +172,7 @@
             the natural ebb and flow of the universe, trying to hold on to what is fleeting and resist what is inevitable. </p>
     </div>
     <div class="content content--full">
-        <h2 class="content__title" data-splitting data-effect23><span class="font-upper font-22">Deeper</span><span class="font-upper font-20">Love</span><span
-                class="font-upper font-18">Light</span>
+        <h2 class="content__title" data-splitting data-effect23><span class="font-upper font-22">Deeper</span><span class="font-upper font-20">Love</span><span class="font-upper font-18">Light</span>
         </h2>
     </div>
     <div class="content">
@@ -222,8 +225,7 @@
         </p>
     </div>
     <div class="content">
-        <h2 class="content__title" data-splitting data-effect29><span class="font-upper">Discipline</span><span class="font-upper">above</span><span class="font-upper">Motivation</span><span
-                class="font-upper">Always</span></h2>
+        <h2 class="content__title" data-splitting data-effect29><span class="font-upper">Discipline</span><span class="font-upper">above</span><span class="font-upper">Motivation</span><span class="font-upper">Always</span></h2>
     </div>
     <div class="content">
         <p>So feel with your heart, think with your mind,
