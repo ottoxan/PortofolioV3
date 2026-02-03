@@ -85,7 +85,7 @@
                             <div>
                                 <h4 class="font-experimental mb-4 border-b border-white/10 pb-2 text-[10px] uppercase tracking-widest opacity-40">Tools &amp; Platforms</h4>
                                 <div class="grid grid-cols-2 gap-2 md:grid-cols-3">
-                                    @foreach ($skills->get('tools', collect()) as $s)
+                                    @foreach ($skills->get('tool', collect()) as $s)
                                         <div class="group border border-white/10 bg-white/5 p-4 transition-colors hover:bg-white/10">
                                             <div class="mb-3 flex items-center justify-between">
                                                 <div class="flex items-center gap-3">
