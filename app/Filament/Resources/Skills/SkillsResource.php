@@ -43,8 +43,6 @@ class SkillsResource extends Resource
     {
         return [
             'index' => ListSkills::route('/'),
-            'create' => CreateSkills::route('/create'),
-            'edit' => EditSkills::route('/{record}/edit'),
         ];
     }
 }

@@ -148,9 +148,13 @@
                     <div class="order-1 grid grid-cols-2 gap-5 md:order-2">
                         @foreach ($projects as $p)
                             <a href="{{ $p->link }}" cursor-class="arrow" class="group relative col-span-1 flex aspect-video items-center justify-center overflow-hidden border border-white/10 bg-white/5">
-                                <span class="material-symbols-outlined text-[120px] text-white/5">
+                                @if ($p->image)
                                     <img class="h-full w-full object-cover transition-transform duration-1000 group-hover:scale-105" src="{{ strpos($p->image, 'http') === 0 ? $p->image : asset('storage/' . ltrim($p->image, '/')) }}" alt="{{ $p->title }}">
-                                </span>
+                                @else
+                                    <span class="font-experimental px-6 text-center text-xl uppercase tracking-widest text-white/20">
+                                        {{ $p->title }}
+                                    </span>
+                                @endif
                                 <div class="pointer-events-none absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-black/90 to-transparent"></div>
                                 <div class="absolute bottom-6 left-6 flex flex-col items-start">
                                     <span class="font-experimental text-[10px] uppercase tracking-widest opacity-40">

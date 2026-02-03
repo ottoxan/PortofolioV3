@@ -6,7 +6,7 @@ use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Schema;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\Slider;
-
+use Filament\Forms\Components\Slider\Enums\PipsMode;
 
 class SkillsForm
 {
@@ -25,6 +25,9 @@ class SkillsForm
                 ->range(minValue: 0, maxValue: 100)
                 ->tooltips()
                 ->fillTrack()
+                ->step(5)
+                ->pips(PipsMode::Positions)
+                ->pipsValues([5,50,100])
         ]);
     }
 }
