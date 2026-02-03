@@ -35,7 +35,7 @@
         <span class="intro__info">Please scroll moderately to fully experience the animations.</span>
     </div>
     <div class="content items-center">
-        <img cursor-class="arrow" class="w-[30%] rounded-lg" src="{{ asset('images/me.png') }}" alt="me">
+        <img cursor-class="arrow" class="w-[80%] rounded-lg md:w-[40%]" src="{{ asset('images/me.png') }}" alt="me">
     </div>
     <div class="content">
         <h2 class="content__title" data-splitting data-effect20><span class="font-22 font-upper">Developer</span><span class="font-12 font-upper">Life</span></h2>
