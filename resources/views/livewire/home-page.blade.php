@@ -3,7 +3,35 @@
         <h1 class="intro__title">
             <span class="intro__title-pre">Welcome</span>
             <span class="intro__title-sub">To my portofolio<sup><small>2</small></sup></span>
+
         </h1>
+        <div id="click-prompt" class="pointer-events-none absolute inset-0 z-50 flex items-center justify-center">
+            <span class="font-experimental animate-pulse text-xs uppercase tracking-[0.2em] text-white/50 transition-all duration-1000 ease-out">
+                [ Click Anywhere ]
+            </span>
+        </div>
+        <script>
+            document.addEventListener('click', function() {
+                var prompt = document.getElementById('click-prompt');
+                if (prompt) {
+                    var span = prompt.querySelector('span');
+                    // Stop animation and set current state
+                    span.classList.remove('animate-pulse');
+
+                    // Force a browser reflow to ensure the transition starts from here
+                    void span.offsetWidth;
+
+                    // Start the exit transition
+                    span.classList.add('opacity-0', 'scale-[3]', 'blur-sm');
+
+                    setTimeout(() => {
+                        prompt.remove();
+                    }, 1000);
+                }
+            }, {
+                once: true
+            });
+        </script>
         <span class="intro__info">Please scroll moderately to fully experience the animations.</span>
     </div>
     <div class="content items-center">
@@ -42,11 +70,11 @@
         <div class="lg:col-span-9">
             <article class="py-24 lg:pl-24">
                 <div class="grid grid-cols-1 items-start gap-16 md:grid-cols-1">
-                    <div class="order-1 grid grid-cols-2 md:order-2">
+                    <div class="order-1 w-full md:order-2">
                         <div class="space-y-12 lg:col-span-7">
                             <div>
                                 <h4 class="font-experimental mb-4 border-b border-white/10 pb-2 text-[10px] uppercase tracking-widest opacity-40">Core Languages</h4>
-                                <div class="grid grid-cols-2 gap-2 md:grid-cols-3">
+                                <div class="grid grid-cols-1 gap-2 sm:grid-cols-2 md:grid-cols-3">
                                     @foreach ($skills->get('language', collect()) as $s)
                                         <div class="group border border-white/10 bg-white/5 p-4 transition-colors hover:bg-white/10">
                                             <div class="mb-3 flex items-center justify-between">
@@ -65,7 +93,7 @@
                             </div>
                             <div>
                                 <h4 class="font-experimental mb-4 border-b border-white/10 pb-2 text-[10px] uppercase tracking-widest opacity-40">Frameworks &amp; Libraries</h4>
-                                <div class="grid grid-cols-2 gap-2 md:grid-cols-3">
+                                <div class="grid grid-cols-1 gap-2 sm:grid-cols-2 md:grid-cols-3">
                                     @foreach ($skills->get('framework', collect()) as $s)
                                         <div class="group border border-white/10 bg-white/5 p-4 transition-colors hover:bg-white/10">
                                             <div class="mb-3 flex items-center justify-between">
@@ -84,7 +112,7 @@
                             </div>
                             <div>
                                 <h4 class="font-experimental mb-4 border-b border-white/10 pb-2 text-[10px] uppercase tracking-widest opacity-40">Tools &amp; Platforms</h4>
-                                <div class="grid grid-cols-2 gap-2 md:grid-cols-3">
+                                <div class="grid grid-cols-1 gap-2 sm:grid-cols-2 md:grid-cols-3">
                                     @foreach ($skills->get('tool', collect()) as $s)
                                         <div class="group border border-white/10 bg-white/5 p-4 transition-colors hover:bg-white/10">
                                             <div class="mb-3 flex items-center justify-between">
@@ -145,7 +173,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="order-1 grid grid-cols-2 gap-5 md:order-2">
+                    <div class="order-1 grid grid-cols-1 gap-5 md:order-2 md:grid-cols-2">
                         @foreach ($projects as $p)
                             <a href="{{ $p->link }}" cursor-class="arrow" class="group relative col-span-1 flex aspect-video items-center justify-center overflow-hidden border border-white/10 bg-white/5">
                                 @if ($p->image)
@@ -203,7 +231,7 @@
         <h2 class="content__title" data-splitting data-effect28>
             <a cursor-class="arrow" href="mailto:ottomandora@gmail.com" class="font-12 flex items-center justify-center gap-4 font-medium !text-[#ddc4a4] transition-colors duration-300 hover:!text-white">
                 <span>Contact me</span>
-                <svg width="64px" height="64px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="h-10 w-10 md:h-16 md:w-16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                     <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
                     <g id="SVGRepo_iconCarrier">
@@ -220,7 +248,7 @@
             I'm here to listen. Let's turn your digital aspirations into
             tangible, high-performance realities.
         </p>
-        <div class="mt-8 flex items-center justify-center gap-8">
+        <div class="mt-8 flex items-center justify-center gap-8" id="contact">
             <a href="https://t.me/bepbep" cursor-class="arrow" target="_blank" class="group text-white/40 transition-colors duration-300 hover:text-white">
                 <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 11.944 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z" />
