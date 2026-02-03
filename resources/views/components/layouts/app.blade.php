@@ -22,7 +22,6 @@
             };
             supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");
         </script>
-        <script src="//tympanus.net/codrops/adpacks/analytics.js"></script>
 
         <title>{{ $title ?? 'Portofolio' }}</title>
         @vite(['resources/css/app.css', 'resources/js/app.js'])
@@ -36,8 +35,6 @@
         </div>
 
         @livewire('partials.navbar')
-
-        {{-- @livewire('partials.navbar') --}}
 
         {{ $slot }}
 
