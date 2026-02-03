@@ -432,9 +432,17 @@ const scroll = () => {
         
         const words = [...title.querySelectorAll('.word')];
         
-        for (const word of words) {
+        for (const [index, word] of words.entries()) {
 
-            const chars = word.querySelectorAll('.char');
+            let chars = [...word.querySelectorAll('.char')];
+            // If this is the last word, append the SVG if it exists in the title
+            if (index === words.length - 1) {
+                const svg = title.querySelector('svg');
+                if (svg) {
+                    chars.push(svg);
+                }
+            }
+
             const charsTotal = chars.length;
             
             gsap.fromTo(chars, {
