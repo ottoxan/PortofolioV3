@@ -57,7 +57,7 @@
             </span>
         </h2>
     </div>
-    <div class="grid grid-cols-1 gap-0 p-[var(--page-padding)] lg:grid-cols-12">
+    <div class="grid grid-cols-1 gap-0 p-[var(--page-padding)] lg:grid-cols-12 z-[100]">
         <aside class="hidden border-r border-white/10 py-24 pr-12 lg:col-span-3 lg:block">
             <div class="sticky top-32">
                 <span class="section-header text-5xl opacity-10">01</span>
