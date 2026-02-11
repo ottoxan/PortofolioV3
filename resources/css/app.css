@@ -29,7 +29,7 @@
 #cursor {
     cursor: none;
     position: fixed;
-    z-index: 99;
+    z-index: 999;
     left: 0;
     top: 0;
     pointer-events: none;
@@ -185,7 +185,7 @@ body {
     align-items: center;
 }
 
-.contact{
+.contact {
     max-width: 20ch;
     line-height: 1.2;
     font-weight: 600;
@@ -608,6 +608,7 @@ main {
     font-size: 1.25rem;
     line-height: 1.4;
 }
+
 @media screen and (min-width: 53em) {
     .frame {
         justify-items: start;
