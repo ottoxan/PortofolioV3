@@ -5,7 +5,15 @@
             <button id="music-btn" class="contact unbutton uppercase" cursor-class="arrow">
                 Sound <span id="music-status">[OFF]</span>
             </button>
-            <a class="contact uppercase" cursor-class="arrow" href="#contact">Contact</a>
+            <a class="contact uppercase !text-[#ddc4a4] flex flex-row items-center" cursor-class="arrow" href="#contact">Reach out
+                <svg class="h-6 w-6 mb-2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="translate: none; rotate: none; scale: none; filter: blur(0.1912px) opacity(0.9841); transform-origin: 50% 100%; transform: translate3d(0px, 0px, 0px) scale(0.992, 0.992); will-change: transform, filter;">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path d="M7 17L17 7M17 7H8M17 7V16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </g>
+                </svg>
+            </a>
         </div>
     </div>
     <audio id="bg-music" loop autoplay>

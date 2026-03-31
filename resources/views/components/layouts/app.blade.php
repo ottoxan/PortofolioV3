@@ -10,6 +10,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
         <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 
+        <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600&amp;family=Work+Sans:wght@300;400;500&amp;display=swap" rel="stylesheet"/>
         <link
             href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Plus+Jakarta+Sans:wght@200;300;400;500;600&amp;family=Syne:wght@700;800&amp;family=Instrument+Serif:ital@0;1&amp;family=Archivo+Black&amp;display=swap"
             rel="stylesheet" />
