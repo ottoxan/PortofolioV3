@@ -63,12 +63,21 @@
                             <p>With over 6 years of experience across the stack, I specialize in building high-performance web applications that don't just work flawlessly but feel premium to the touch.</p>
                         </div>
                         <!-- Skill Bento Grid -->
-                        <div class="mt-16 grid grid-cols-3 gap-3 md:grid-cols-4 xl:grid-cols-5">
-                            @foreach ($skills->get('language', collect())->merge($skills->get('framework', collect())) as $s)
-                                <div cursor-class="arrow" class="bg-surface-container border-outline-variant/10 hover:border-primary/30 group rounded-lg border p-3 transition-all md:p-4">
-                                    <h4 class="font-headline text-on-surface truncate text-sm font-bold">{{ $s->skill }}</h4>
-                                    <p class="font-label text-on-surface-variant mt-1 text-[10px] uppercase tracking-wider">{{ $s->percentage }}% Mastery</p>
-                                </div>
+                        <div class="mt-10 space-y-5">
+                            @foreach (['language' => 'Languages', 'framework' => 'Frameworks', 'tool' => 'Tools & Utilities'] as $key => $title)
+                                @if ($skills->get($key, collect())->isNotEmpty())
+                                    <div>
+                                        <h3 class="font-headline text-on-surface mb-6 text-xl font-bold">{{ $title }}</h3>
+                                        <div class="grid grid-cols-3 gap-3 md:grid-cols-4 xl:grid-cols-5">
+                                            @foreach ($skills->get($key, collect()) as $s)
+                                                <div cursor-class="arrow" class="bg-surface-container border-outline-variant/10 hover:border-primary/30 group rounded-lg border p-3 transition-all md:p-4">
+                                                    <h4 class="font-headline text-on-surface truncate text-sm font-bold">{{ $s->skill }}</h4>
+                                                    <p class="font-label text-on-surface-variant mt-1 text-[10px] uppercase tracking-wider">{{ $s->percentage }}% Mastery</p>
+                                                </div>
+                                            @endforeach
+                                        </div>
+                                    </div>
+                                @endif
                             @endforeach
                         </div>
                     </div>
